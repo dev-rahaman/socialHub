@@ -1,0 +1,108 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.custom-rounded {
+  border-radius: 50px 0 50px 0;
+} */
+
+/* scroll bar  start */
+/* .dashboard-custom-scrollbar {
+  overflow: hidden;
+  transition: overflow 0.5s;
+}
+
+.dashboard-custom-scrollbar:hover {
+  overflow: auto;
+}
+
+.dashboard-custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6d28d9, green);
+  border-radius: 10px;
+}
+
+.dashboard-custom-scrollbar::-webkit-scrollbar-track {
+  background-color: red;
+  border-radius: 10px;
+} */
+
+/* scroll bar end  */
+/* 
+option:nth-child(odd) {
+  background-color: rgb(228, 202, 202);
+}
+
+.custom-dropdown select {
+  text-indent: 5px;
+}
+.custom-dropdown select option {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightgray;
+  border-radius: 5px;
+  top: 10;
+}
+
+.dini-ilm {
+  background-image: url("/dini-ilm");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::selection {
+  color: #000;
+  background-color: #ea8b26;
+}
+
+.custom-bg {
+  background-color: #00769c;
+}
+
+.custom-text {
+  color: #fff;
+}
+.custom-text:hover {
+  color: #9bb200;
+} */
+
+/* notifications */
+/* 
+td {
+  border: 1px solid #dddddd;
+  padding: 20px;
+}
+
+td:hover,
+tr:nth-child(even):hover {
+  background-color: #dddddd;
+}
+
+.messageInput {
+  border: 1px solid #000;
+  border-radius: 50px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.messageInput:focus {
+  border: 1px solid #000;
+  clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+}
+
+.btn {
+  background-color: #02a7c3;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #25454d;
+} */
