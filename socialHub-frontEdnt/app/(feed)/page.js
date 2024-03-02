@@ -4,9 +4,9 @@ import Post from "./(pages)/post/page";
 
 const feed = () => {
   return (
-    <div>
+    <>
       <Post />
-    </div>
+    </>
   );
 };
 

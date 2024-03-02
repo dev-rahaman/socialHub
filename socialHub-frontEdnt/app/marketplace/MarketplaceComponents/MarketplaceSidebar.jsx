@@ -1,21 +1,30 @@
 "use client";
 import Link from "next/link";
-import { DropdownIcon } from "@/app/icons/icons";
-import { useState } from "react";
+import React, { useState } from "react";
 
-const menus = [
-  { name: "Home", link: "/", icon: "🏠" },
-  { name: "Your Video", link: "your-video", icon: "🎥" },
-  { name: "Shorts", link: "shorts", icon: "▶️" },
-  { name: "Events", link: "events", icon: "⚡" },
-  { name: "Watch later", link: "watch-later", icon: "⏰" },
-  { name: "Liked Video", link: "liked-video", icon: "👍" },
-  { name: "Trending Video", link: "trending-video", icon: "📈" },
-  { name: "Music", link: "music", icon: "🎵" },
-  { name: "Gaming", link: "gaming", icon: "🎮" },
-  { name: "Sport", link: "sport", icon: "⚽" },
-  { name: "Notifications", link: "notifications", icon: "🔔" },
-  { name: "History", link: "video-history", icon: "🕰️" },
+const items = [
+  { name: "Vehicles", link: "/Vehicles", icon: "🚗" },
+  { name: "Property Rentals", link: "/property-rentals", icon: "✰" },
+  { name: "Apparel", link: "/apparel", icon: "👕" },
+  { name: "Classifieds", link: "/classifieds", icon: "📰" },
+  { name: "Electronics", link: "/electronics", icon: "📱" },
+  { name: "Entertainment", link: "/entertainment", icon: "🎬" },
+  { name: "Family", link: "/family", icon: "👨‍👩‍👧‍👦" },
+  { name: "Free Stuff", link: "/free-stuff", icon: "🆓" },
+  { name: "Garden & Outdoor", link: "/garden-outdoor", icon: "🌳" },
+  { name: "Hobbies", link: "/hobbies", icon: "🎨" },
+  { name: "Home Goods", link: "/home-goods", icon: "🏠" },
+  {
+    name: "Home Improvement",
+    link: "/home-improvement",
+    icon: "🔧",
+  },
+  { name: "Home Sales", link: "/home-sales", icon: "🏡" },
+  { name: "Musical Instruments", link: "/musical-instruments", icon: "🎸" },
+  { name: "Office Supplies", link: "/office-supplies", icon: "📎" },
+  { name: "Pet Supplies", link: "/pet-supplies", icon: "🐶" },
+  { name: "Sporting Goods", link: "/sporting-goods", icon: "⚽" },
+  { name: "Toys & Games", link: "/toys-games", icon: "🎲" },
 ];
 
 export const Item = ({ name, link, icon }) => {
@@ -70,7 +79,7 @@ const DropdownMenu = ({ title, icon, dropdownItems }) => {
   );
 };
 
-const VideoLeftSidebar = () => {
+const MarketplaceSidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -81,7 +90,7 @@ const VideoLeftSidebar = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {menus.map((item, idx) =>
+      {items.map((item, idx) =>
         "dropdown" in item ? (
           <DropdownMenu key={idx} {...item.dropdown[0]} />
         ) : (
@@ -92,4 +101,4 @@ const VideoLeftSidebar = () => {
   );
 };
 
-export default VideoLeftSidebar;
+export default MarketplaceSidebar;

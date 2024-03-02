@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 
 const products = [
   {
@@ -50,35 +48,36 @@ const products = [
   },
 ];
 
-const Marketplace = () => {
+const ProductDetails = ({ params }) => {
+  const findProduct = products.find((item) => item.id === parseInt(params.id));
+
   return (
-    <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
-      {products.map((item) => (
-        <div className="w-[250px] rounded-lg border border-gray-200 bg-white shadow">
-          <Link href={`marketplace/${item?.id}`}>
-            <img className="rounded-t-lg" src={item?.image} alt="" />
-          </Link>
+    <div className="my-5 flex flex-wrap items-center justify-center gap-3">
+      {findProduct && (
+        <div className="rounded-lg border border-gray-200 bg-white shadow">
+          <img
+            className="w-full rounded-t-lg"
+            src={findProduct?.image}
+            alt=""
+          />
           <div className="p-5">
-            <Link href={`marketplace/${item?.id}`}>
-              <h5 className="mb-2 text-[18px] font-bold tracking-tight text-gray-900 ">
-                {item?.name}
-              </h5>
-            </Link>
-            <p className="mb-3 text-[15px] font-normal text-gray-700 dark:text-gray-400">
-              {item?.description}
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+              {findProduct?.name}
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              {findProduct?.description}
             </p>
-            <Link
-              href={`marketplace/${item?.id}`}
+            <a
+              href="#"
               className="inline-flex items-center gap-1 rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Details
-              <FaArrowRight />
-            </Link>
+              Message Now
+            </a>
           </div>
         </div>
-      ))}
+      )}
     </div>
   );
 };
 
-export default Marketplace;
+export default ProductDetails;
