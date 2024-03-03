@@ -5,10 +5,10 @@ import React from "react";
 export default function VideoCard({ data }) {
   return (
     <div>
-      <div className="mx-4 mt-5 flex flex-wrap items-center justify-center gap-3">
+      <div className="mx-4 mt-16 flex flex-wrap items-center justify-center gap-3 lg:mt-5">
         {data.map((video, idx) => (
           <Link href={`/video/${video?._id}`} key={idx}>
-            <div className="relative ms-5 w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
+            <div className="relative ms-5 h-[250px] w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
               <Image
                 width={230}
                 height={195}

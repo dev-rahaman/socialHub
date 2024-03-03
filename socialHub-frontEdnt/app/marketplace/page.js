@@ -52,9 +52,9 @@ const products = [
 
 const Marketplace = () => {
   return (
-    <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+    <div className="mt-16 flex flex-wrap items-center justify-center gap-3 lg:mt-5">
       {products.map((item) => (
-        <div className="w-[250px] rounded-lg border border-gray-200 bg-white shadow">
+        <div className="ms-8 w-[320px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
           <Link href={`marketplace/${item?.id}`}>
             <img className="rounded-t-lg" src={item?.image} alt="" />
           </Link>
