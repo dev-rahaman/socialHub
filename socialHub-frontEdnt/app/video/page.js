@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import VideoCard from "./VideoCard";
+import VideoCard from "./VideoCompnents/VideoCard";
 import FetchData from "../(feed)/Functions/FetchData";
 
 const Video = () => {

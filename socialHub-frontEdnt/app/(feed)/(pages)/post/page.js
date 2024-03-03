@@ -5,7 +5,7 @@ import ArticleCard from "../article/ArticleCard";
 import BookCard from "../book/BookCard";
 import NoticeCard from "../notice/NoticeCard";
 import ClassCard from "../classes/ClassCard";
-import VideoCard from "@/app/video/VideoCard";
+import VideoCard from "@/app/video/VideoCompnents/VideoCard";
 
 const Post = () => {
   const [posts, setPosts] = useState([]);

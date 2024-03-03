@@ -19,14 +19,25 @@ export default function NoticeCard({ data }) {
                 )}
               </span>
             </Link>
-            <div className="my-3 flex gap-4 text-sm">
+            {/* <div className="my-3 flex gap-4 text-sm">
               <div className="flex cursor-pointer gap-1">
                 <UserIcon /> <span>By administrator</span>
               </div>
               <div className="flex gap-1">
                 <UserIcon /> <span>{item.time}</span>
               </div>
-            </div>
+            </div> */}
+            <figcaption class="mx-4 mt-2 flex ">
+              <img
+                class="h-9 w-9 rounded-full"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                alt="profile picture"
+              />
+              <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
+                <p>Abdur Rahaman Sultany</p>
+                <p className="text-[14px] text-gray-800">330K Views</p>
+              </div>
+            </figcaption>
           </div>
         ))}
       </div>

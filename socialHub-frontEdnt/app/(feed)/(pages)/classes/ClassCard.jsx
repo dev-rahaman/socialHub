@@ -29,7 +29,7 @@ export default function ClassCard({ data }) {
                   <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
                     <div>
                       {item?.title.length > 30 ? (
-                        <>{item?.title.slice(0, 30)}...</>
+                        <>{item?.title.slice(0, 35)}...</>
                       ) : (
                         <>{item?.title}</>
                       )}
