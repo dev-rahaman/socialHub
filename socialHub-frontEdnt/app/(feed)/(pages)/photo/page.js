@@ -1,65 +1,68 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 
 const images = [
   { link: "/profile-image.jpg", alt: "name" },
+  { link: "/book.jpg", alt: "name" },
+  { link: "/class.png", alt: "name" },
+  { link: "/dini-ilm.jpg", alt: "name" },
+  { link: "/girl-1.avif", alt: "name" },
+  { link: "/girl-2.jpg", alt: "name" },
+  { link: "/girl-3.jpg", alt: "name" },
+  { link: "/girl-4.jpg", alt: "name" },
+  { link: "/image2.jpg", alt: "name" },
+  { link: "/placholder.svg", alt: "name" },
+  { link: "/profile-back-cover.jpg", alt: "name" },
   { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/profile-image.jpg", alt: "name" },
+  { link: "/facebook-imag.svg", alt: "name" },
+  { link: "/Bold.svg", alt: "name" },
+  { link: "/dini-ilm.jpg", alt: "name" },
+  { link: "/fgfd.jpg", alt: "name" },
+  { link: "/fafdsaf.jpg", alt: "name" },
+  { link: "/dsfds.jpg", alt: "name" },
+  { link: "/fdfds.jpg", alt: "name" },
+  { link: "/dsfs.jpg", alt: "name" },
+  { link: "/frdgd.jpg", alt: "name" },
 ];
 
 const ImageGallery = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [fullscreen, setFullscreen] = useState(
+    Array(images.length).fill(false),
+  );
 
-  const openImageModal = (image) => {
-    setSelectedImage(image.link);
-  };
-
-  const closeImageModal = () => {
-    setSelectedImage(null);
+  const toggleFullscreen = (index) => {
+    const updatedFullscreen = [...fullscreen];
+    updatedFullscreen[index] = !updatedFullscreen[index];
+    setFullscreen(updatedFullscreen);
   };
 
   return (
     <>
-      <div className="flex flex-wrap gap-2 my-5">
+      <div class="mt-4 columns-1 sm:columns-2 sm:gap-2 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
         {images.map((item, index) => (
-          <>
-            <div key={index} className="relative overflow-hidden">
-              <Image src={item.link} width={230} height={230} alt={item.alt} />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+          <div key={index} className="relative my-2">
+            <img
+              src={item.link}
+              alt={item.alt}
+              className="w-[200px] cursor-pointer object-cover"
+              onClick={() => toggleFullscreen(index)}
+            />
+            {fullscreen[index] && (
+              <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-50">
+                <img
+                  src={item.link}
+                  alt={item.alt}
+                  className="max-h-full max-w-full"
+                />
                 <button
-                  className="text-white text-xl"
-                  onClick={() => openImageModal(item)}
+                  onClick={() => toggleFullscreen(index)}
+                  className="absolute right-0 top-0 p-2 text-white"
                 >
-                  View
+                  Close
                 </button>
               </div>
-            </div>
-            {selectedImage && (
-              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-                <div className="max-w-full max-h-full overflow-auto">
-                  <img
-                    src={selectedImage}
-                    alt={`Image ${index + 1}`}
-                    className="w-full h-auto"
-                  />
-                  <button
-                    className="text-white absolute top-4 right-4 text-xl cursor-pointer"
-                    onClick={closeImageModal}
-                  >
-                    X
-                  </button>
-                </div>
-              </div>
             )}
-          </>
+          </div>
         ))}
       </div>
     </>

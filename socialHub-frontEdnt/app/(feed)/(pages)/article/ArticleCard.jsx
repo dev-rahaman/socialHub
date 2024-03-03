@@ -1,4 +1,3 @@
-import { UserIcon } from "@/app/icons/icons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,17 +5,17 @@ import parse from "html-react-parser";
 
 export default function ArticleCard({ data }) {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="mx-5 flex flex-col items-center justify-center">
       {data.map((article, idx) => (
         <div
           key={idx}
-          className="mt-5 rounded border-b border-[var(--primary)]  lg:w-[705px]"
+          className="mt-5 rounded border-b border-[var(--primary)]"
         >
           <Image
             src={"/image3.jpg"}
             alt="blogs"
-            width={500}
-            height={500}
+            width={10}
+            height={10}
             className="rounded md:w-full"
           />
           <div className="p-5 px-2">

@@ -22,205 +22,118 @@ const ClassDetails = () => {
       <div className="my-5 flex flex-wrap gap-2">
         <Link href={"/classes/classDetails"}>
           <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
+            <div className="relative h-[255px] w-[250px] rounded-lg border border-gray-200 bg-white shadow">
               <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
+                width={230}
+                height={195}
+                src="/class.png"
+                alt="Video Thumbnail"
+                className="h-[130px] w-full"
               />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
+              <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
+                27: 51
+              </span>
+              <figcaption class="mx-3 mt-3 flex ">
+                <img
+                  class="h-9 w-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  alt="profile picture"
+                />
+                <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
+                  <div>
+                    {/* {item?.title.length > 30 ? (
+                      <>{item?.title.slice(0, 35)}...</>
+                    ) : (
+                      <>{item?.title}</>
+                    )} */}
+                  </div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    CTO at Google
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="text-[14px] text-gray-800">330K Views</p>
+                    <p className="text-[14px] text-gray-800">19 Hours</p>
+                  </div>
                 </div>
-              </div>
+              </figcaption>
             </div>
           </div>
         </Link>
         <Link href={"/classes/classDetails"}>
           <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
+            <div className="relative h-[255px] w-[250px] rounded-lg border border-gray-200 bg-white shadow">
               <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
+                width={230}
+                height={195}
+                src="/class.png"
+                alt="Video Thumbnail"
+                className="h-[130px] w-full"
               />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
+              <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
+                27: 51
+              </span>
+              <figcaption class="mx-3 mt-3 flex ">
+                <img
+                  class="h-9 w-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  alt="profile picture"
+                />
+                <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
+                  <div>
+                    {/* {item?.title.length > 30 ? (
+                      <>{item?.title.slice(0, 35)}...</>
+                    ) : (
+                      <>{item?.title}</>
+                    )} */}
+                  </div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    CTO at Google
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="text-[14px] text-gray-800">330K Views</p>
+                    <p className="text-[14px] text-gray-800">19 Hours</p>
+                  </div>
                 </div>
-              </div>
+              </figcaption>
             </div>
           </div>
         </Link>
         <Link href={"/classes/classDetails"}>
           <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
+            <div className="relative h-[255px] w-[250px] rounded-lg border border-gray-200 bg-white shadow">
               <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
+                width={230}
+                height={195}
+                src="/class.png"
+                alt="Video Thumbnail"
+                className="h-[130px] w-full"
               />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
+              <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
+                27: 51
+              </span>
+              <figcaption class="mx-3 mt-3 flex ">
+                <img
+                  class="h-9 w-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  alt="profile picture"
+                />
+                <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
+                  <div>
+                    {/* {item?.title.length > 30 ? (
+                      <>{item?.title.slice(0, 35)}...</>
+                    ) : (
+                      <>{item?.title}</>
+                    )} */}
+                  </div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    CTO at Google
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="text-[14px] text-gray-800">330K Views</p>
+                    <p className="text-[14px] text-gray-800">19 Hours</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href={"/classes/classDetails"}>
-          <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
-              <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
-              />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href={"/classes/classDetails"}>
-          <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
-              <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
-              />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link href={"/classes/classDetails"}>
-          <div className="relative h-[255px] w-[230px] overflow-hidden rounded bg-red-500 shadow-lg">
-            <Image
-              width={230}
-              height={195}
-              src="/class.png"
-              alt="Video Thumbnail"
-              className="h-[130px] w-[240px]"
-            />
-            <span className="absolute right-0 top-[6.50rem] me-2 rounded bg-black px-2.5 py-0.5 text-xs font-medium text-white">
-              27: 51
-            </span>
-            <div className="mt-2 flex justify-center px-1">
-              <Image
-                width={30}
-                height={30}
-                src="/profile-image.jpg"
-                alt="Profile"
-                className="mx-auto h-12 w-12 rounded-full"
-              />
-              <div className="ml-3">
-                <span className="text-center text-sm">
-                  Search any image with Google Lens Search any image with Google
-                  Lens
-                </span>
-                <p className="text-sm text-gray-800">Dev-Rahaman</p>
-                <div className="flex text-sm">
-                  <p className="text-gray-800">Views: 1M&nbsp;•&nbsp;</p>
-                  <p className="text-gray-800">1 Day Ago</p>
-                </div>
-              </div>
+              </figcaption>
             </div>
           </div>
         </Link>

@@ -1,96 +1,151 @@
 "use client";
 import Link from "next/link";
-import {
-  BlogIcon,
-  BookIcon,
-  ClassIcon,
-  DropdownIcon,
-  EditIcon,
-  EventIcon,
-  ExploreIcon,
-  HomeIcon,
-  NoticeIcon,
-  NotificationIcon,
-  PhotoIcon,
-  VideoIcon,
-} from "@/app/icons/icons";
-import { MdHistory } from "react-icons/md";
-import { SiYoutubeshorts } from "react-icons/si";
+import { DropdownIcon } from "@/app/icons/icons";
 import { useState } from "react";
 
+// const menus = [
+//   {
+//     name: "Home",
+//     link: "/",
+//     icon: <HomeIcon />,
+//   },
+//   {
+//     name: "Profile",
+//     link: "/profile",
+//     icon: <EditIcon />,
+//   },
+//   {
+//     dropdown: [
+//       {
+//         title: "School",
+//         icon: <BookIcon />,
+//         dropdownItems: [
+//           { name: "Classes", icon: <ClassIcon />, link: "/classes" },
+//           { name: "Books", icon: <BookIcon />, link: "/book" },
+//           { name: "Notice", icon: <NoticeIcon />, link: "/notice" },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     name: "Articles",
+//     link: "/article",
+//     icon: <BlogIcon />,
+//   },
+//   {
+//     name: "Shorts",
+//     link: "/short",
+//     icon: <SiYoutubeshorts />,
+//   },
+//   {
+//     name: "Video",
+//     link: "/video",
+//     icon: <VideoIcon />,
+//   },
+//   {
+//     name: "Photo",
+//     link: "/photo",
+//     icon: <PhotoIcon />,
+//   },
+//   {
+//     name: "Event",
+//     link: "/event",
+//     icon: <EventIcon />,
+//   },
+//   {
+//     name: "Notifications",
+//     link: "/notification",
+//     icon: <NotificationIcon />,
+//   },
+//   {
+//     name: "Message",
+//     link: "/message",
+//     icon: <NoticeIcon />,
+//   },
+//   {
+//     name: "Premium",
+//     link: "/explore",
+//     icon: <ExploreIcon />,
+//   },
+//   {
+//     name: "প্রিমিয়াম",
+//     link: "/premium",
+//     icon: <NoticeIcon />,
+//   },
+//   {
+//     name: "History",
+//     link: "/history",
+//     icon: <MdHistory />,
+//   },
+// ];
 const menus = [
   {
-    name: "হোম",
+    name: "Home",
     link: "/",
-    icon: <HomeIcon />,
+    icon: "🏠",
   },
   {
-    name: "প্রোফাইল",
+    name: "Profile",
     link: "/profile",
-    icon: <EditIcon />,
+    icon: "✏️",
   },
   {
     dropdown: [
       {
         title: "School",
-        icon: <BookIcon />,
+        icon: "📚",
         dropdownItems: [
-          { name: "Classes", icon: <ClassIcon />, link: "/classes" },
-          { name: "Books", icon: <BookIcon />, link: "/book" },
-          { name: "Notice", icon: <NoticeIcon />, link: "/notice" },
+          { name: "Classes", icon: "🎓", link: "/classes" },
+          { name: "Books", icon: "📖", link: "/book" },
+          { name: "Notice", icon: "📌", link: "/notice" },
         ],
       },
     ],
   },
   {
-    name: "আর্টিকেল",
+    name: "Articles",
     link: "/article",
-    icon: <BlogIcon />,
+    icon: "📰",
   },
   {
-    name: "শর্ট",
+    name: "Shorts",
     link: "/short",
-    icon: <SiYoutubeshorts />,
+    icon: "▶️",
   },
   {
-    name: "ভিডিও",
+    name: "Video",
     link: "/video",
-    icon: <VideoIcon />,
+    icon: "🎥",
   },
   {
-    name: "ফটো",
+    name: "Photo",
     link: "/photo",
-    icon: <PhotoIcon />,
+    icon: "📷",
   },
   {
-    name: "ইভেন্ট",
+    name: "Event",
     link: "/event",
-    icon: <EventIcon />,
+    icon: "📅",
   },
   {
-    name: "নোটিফিকেশন",
+    name: "Notifications",
     link: "/notification",
-    icon: <NotificationIcon />,
+    icon: "🔔",
   },
   {
-    name: "মেসেজ",
+    name: "Message",
     link: "/message",
-    icon: <NoticeIcon />,
+    icon: "📩",
   },
   {
-    name: "এক্সপ্লোর",
+    name: "Premium",
     link: "/explore",
-    icon: <ExploreIcon />,
+    icon: "🌟",
   },
   {
-    name: "প্রিমিয়াম",
-    link: "/premium",
-    icon: <NoticeIcon />,
-  },
-  {
-    name: "হিস্টোরি",
+    name: "History",
     link: "/history",
-    icon: <MdHistory />,
+    icon: "🕰️",
   },
 ];
 

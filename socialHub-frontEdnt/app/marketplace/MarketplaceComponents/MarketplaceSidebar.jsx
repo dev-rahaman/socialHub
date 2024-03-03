@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const items = [
   { name: "Vehicles", link: "/Vehicles", icon: "🚗" },
-  { name: "Property Rentals", link: "/property-rentals", icon: "✰" },
+  { name: "Property Rentals", link: "/property-rentals", icon: "🌟" },
   { name: "Apparel", link: "/apparel", icon: "👕" },
   { name: "Classifieds", link: "/classifieds", icon: "📰" },
   { name: "Electronics", link: "/electronics", icon: "📱" },

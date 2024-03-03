@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import VideoCard from "./VideoCompnents/VideoCard";
-import FetchData from "../(feed)/Functions/FetchData";
+import FetchData from "../../Functions/FetchData";
+// import FetchData from "../(feed)/Functions/FetchData";
 
 const Video = () => {
   const [videos, setVideos] = useState([]);

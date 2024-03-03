@@ -33,9 +33,8 @@ export default function VideoCard({ data }) {
                       <>{video?.title}</>
                     )}
                   </div>
-
                   <div class="text-sm text-gray-500 dark:text-gray-400">
-                    CTO at Google
+                    CTO at Goog
                   </div>
                   <div className="flex gap-2">
                     <p className="text-[14px] text-gray-800">330K Views</p>

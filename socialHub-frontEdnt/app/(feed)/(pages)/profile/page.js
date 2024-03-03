@@ -4,7 +4,7 @@ import ProfileLeft from "./profileLeft";
 
 const Profile = () => {
   return (
-    <div className="mb-10 mt-1">
+    <div className="mx-10 mb-10 mt-1">
       <img src="/profile-back-cover.jpg" alt="background-img" />
       <div className="flex items-center">
         <ImageUploader />

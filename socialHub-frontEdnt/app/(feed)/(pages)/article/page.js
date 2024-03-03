@@ -12,7 +12,7 @@ const Article = () => {
   return (
     <>
       <Tags />
-      <div className="ms-[250px] mt-16 space-y-10 lg:ms-36">
+      <div className="mt-12">
         <ArticleCard data={article} />
       </div>
     </>

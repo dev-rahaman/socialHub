@@ -7,9 +7,10 @@ import { AppIcon, NotificationIcon, UserIcon } from "@/app/icons/icons";
 const items = [
   { name: "Home", href: "/" },
   { name: "Video", href: "/video" },
-  { name: "Group", href: "/group" },
+  { name: "Short", href: "/short" },
+  // { name: "Group", href: "/group" },
   { name: "Marketplace", href: "/marketplace" },
-  { name: "Game", href: "/game" },
+  // { name: "Game", href: "/game" },
 ];
 
 const FeedHeader = () => {
