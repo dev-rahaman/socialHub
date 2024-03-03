@@ -1,4 +1,3 @@
-import { UserIcon } from "@/app/icons/icons";
 import Link from "next/link";
 import React from "react";
 import parse from "html-react-parser";
@@ -8,7 +7,7 @@ export default function NoticeCard({ data }) {
     <div>
       <div className="mt-4 space-y-4 ">
         {data.map((item, idx) => (
-          <div className="mx-4 bg-white p-5" key={idx}>
+          <div className="mx-4 ms-10 bg-white p-5 lg:ms-5" key={idx}>
             <Link href={`/notice/${item._id}`}>
               <span className="cursor-pointer">
                 {parse(

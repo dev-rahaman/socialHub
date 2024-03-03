@@ -4,16 +4,15 @@ import React from "react";
 export default function BookCard({ data }) {
   return (
     <>
-      <div className="mb-5 ms-5  mt-14 flex flex-wrap gap-3">
-        {data.map((book, idx) => (
-          <div className="relative  w-[250px] rounded-lg border border-gray-200 bg-white shadow">
+      <div className="mb-5 ms-5 mt-14 flex flex-wrap gap-3">
+        {data.map((book) => (
+          <div className=" ms-5 w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
             <img
               src="/book.jpg"
               alt="Book Cover"
               className="mb-4 h-[230px] w-full rounded"
             />
-            <div className="">
-              {/* <h2 className="font-bold">{book.bookName.slice(0, 25)}</h2> */}
+            <div>
               <figcaption class="mx-3 flex ">
                 <img
                   class="h-9 w-9 rounded-full"

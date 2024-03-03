@@ -8,7 +8,7 @@ export default function VideoCard({ data }) {
       <div className="mx-4 mt-5 flex flex-wrap items-center justify-center gap-3">
         {data.map((video, idx) => (
           <Link href={`/video/${video?._id}`} key={idx}>
-            <div className="relative h-[255px] w-[250px] rounded-lg border border-gray-200 bg-white shadow">
+            <div className="relative ms-5 w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
               <Image
                 width={230}
                 height={195}

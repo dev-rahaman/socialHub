@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import parse from "html-react-parser";
@@ -9,17 +8,11 @@ export default function ArticleCard({ data }) {
       {data.map((article, idx) => (
         <div
           key={idx}
-          className="mt-5 rounded border-b border-[var(--primary)]"
+          className="ms-5 mt-5 rounded border-b border-[var(--primary)]"
         >
-          <Image
-            src={"/image3.jpg"}
-            alt="blogs"
-            width={10}
-            height={10}
-            className="rounded md:w-full"
-          />
+          <img src={"/image3.jpg"} alt="blogs" className="rounded md:w-full" />
           <div className="p-5 px-2">
-            <h2 className="text-3xl font-bold capitalize">
+            <h2 className="text-[20px]  font-bold capitalize lg:text-3xl">
               {article?.title.length > 50 ? (
                 <>{article?.title.slice(0, 50)}</>
               ) : (

@@ -19,13 +19,13 @@ const Post = () => {
   const videos = posts.filter((post) => post.category === "video");
 
   return (
-    <>
+    <div className="mt-10 lg:mt-0">
       <ArticleCard data={articles} />
       <BookCard data={books} />
       <ClassCard data={classes} />
       <NoticeCard data={notices} />
       <VideoCard data={videos} />
-    </>
+    </div>
   );
 };
 
