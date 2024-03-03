@@ -25,13 +25,13 @@ const ShortVideo = () => {
 
   const handlePrev = () => {
     setStartIndex((prevStartIndex) =>
-      prevStartIndex === 0 ? cartItems.length - 1 : prevStartIndex - 1
+      prevStartIndex === 0 ? cartItems.length - 1 : prevStartIndex - 1,
     );
   };
 
   const handleNext = () => {
     setStartIndex((prevStartIndex) =>
-      prevStartIndex === cartItems.length - 1 ? 0 : prevStartIndex + 1
+      prevStartIndex === cartItems.length - 1 ? 0 : prevStartIndex + 1,
     );
   };
 
@@ -46,20 +46,18 @@ const ShortVideo = () => {
   const visibleItems = cartItems.slice(startIndex, startIndex + 1);
 
   return (
-    <div className="w-[720px] flex justify-between">
-      <div className="video mt-6">
+    <div className="flex lg:w-[720px]">
+      <div className="video">
         <div onWheel={handleScroll}>
           <ul>
             {visibleItems.map((item) => (
               <div
                 key={item.id}
-                className="w-[680px] flex items-center justify-center"
+                className="relative ms-5 flex w-[400px] items-center justify-center lg:w-[680px]"
               >
                 <video
                   id="myVideo"
-                  width="300"
-                  height="300"
-                  className="w-[283px] h-[500px] outline-none"
+                  width="340"
                   controls
                   autoPlay
                   loop
@@ -68,7 +66,6 @@ const ShortVideo = () => {
                 >
                   <source src={item.url} type="video/mp4" />
                 </video>
-
                 <ShortComponent />
               </div>
             ))}

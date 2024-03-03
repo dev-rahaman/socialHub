@@ -16,13 +16,13 @@ const ImageUploader = () => {
   };
 
   return (
-    <div>
+    <div className="bottom-10">
       {image ? (
         <div>
           <img
             src={image}
             alt="Uploaded"
-            className="mt-2 h-[170px] w-[170px] rounded-full"
+            className="mt-2 h-[100px] w-[100px] rounded-full lg:h-[170px] lg:w-[170px]"
           />
         </div>
       ) : (

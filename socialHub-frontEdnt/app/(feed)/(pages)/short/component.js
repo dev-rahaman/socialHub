@@ -3,22 +3,22 @@ import { LoveIcon, MessageIcon, ShearIcon, ViewIcon } from "@/app/icons/icons";
 const ShortComponent = () => {
   return (
     <>
-      <div className="my-5">
-        <div className="flex items-center mt-5">
-          <div className="space-y-5 ms-2">
-            <div className="flex items-center justify-center flex-col">
+      <div className="absolute right-16 my-5 lg:right-28">
+        <div className="mt-5 flex items-center">
+          <div className="ms-2 space-y-5">
+            <div className="flex flex-col items-center justify-center">
               <ViewIcon />
               <span>{12547}</span>
             </div>
-            <div className="flex items-center justify-center flex-col ">
+            <div className="flex flex-col items-center justify-center ">
               <LoveIcon />
               <span>{2145}</span>
             </div>
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex flex-col items-center justify-center">
               <MessageIcon />
               <span>{2458}</span>
             </div>
-            <div className="flex items-center justify-center flex-col">
+            <div className="flex flex-col items-center justify-center">
               <ShearIcon />
               <span>{35}</span>
             </div>

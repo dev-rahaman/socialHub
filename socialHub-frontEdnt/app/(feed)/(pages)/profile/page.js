@@ -4,13 +4,19 @@ import ProfileLeft from "./profileLeft";
 
 const Profile = () => {
   return (
-    <div className="mx-10 mb-10 mt-1">
-      <img src="/profile-back-cover.jpg" alt="background-img" />
-      <div className="flex items-center">
+    <div className="mx-10 mb-10 mt-16 lg:mt-1">
+      <img
+        src="/profile-back-cover.jpg"
+        className="rounded lg:h-[200px] lg:w-[728px]"
+        alt="background-img"
+      />
+      <div className="lg:flex lg:items-center">
         <ImageUploader />
-        <div className="m-5">
-          <div className="flex items-center">
-            <h2 className="text-3xl font-bold">Abdur Rahaman Sultany </h2>
+        <div className="ms-0 lg:m-5">
+          <div className="lg:flex lg:items-center">
+            <h2 className="text-[20px] font-bold lg:text-3xl">
+              Abdur Rahaman Sultany
+            </h2>
             <h2 className="ms-1 mt-1 text-[20px] font-semibold">
               (Programmer)
             </h2>

@@ -52,7 +52,7 @@ const ProductDetails = ({ params }) => {
   const findProduct = products.find((item) => item.id === parseInt(params.id));
 
   return (
-    <div className="my-5 flex flex-wrap items-center justify-center gap-3">
+    <div className="my-5 ms-12 mt-16 flex w-[320px] flex-wrap items-center justify-center gap-3 lg:ms-1 lg:mt-5 lg:w-full">
       {findProduct && (
         <div className="rounded-lg border border-gray-200 bg-white shadow">
           <img
