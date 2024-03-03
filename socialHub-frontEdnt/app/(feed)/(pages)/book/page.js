@@ -13,7 +13,9 @@ const Book = () => {
   return (
     <>
       <Tags />
-      <BookCard data={books} />
+      <div className="mt-20">
+        <BookCard data={books} />
+      </div>
     </>
   );
 };

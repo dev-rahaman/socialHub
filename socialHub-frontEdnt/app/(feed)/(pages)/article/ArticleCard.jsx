@@ -6,11 +6,11 @@ import parse from "html-react-parser";
 
 export default function ArticleCard({ data }) {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       {data.map((article, idx) => (
         <div
           key={idx}
-          className="mt-5 rounded border-b border-[var(--primary)] lg:h-[560px] lg:w-[500px]"
+          className="mt-5 rounded border-b border-[var(--primary)]  lg:w-[705px]"
         >
           <Image
             src={"/image3.jpg"}
@@ -21,16 +21,29 @@ export default function ArticleCard({ data }) {
           />
           <div className="p-5 px-2">
             <h2 className="text-3xl font-bold capitalize">
-              {article?.title?.slice(0, 59)}
+              {article?.title.length > 50 ? (
+                <>{article?.title.slice(0, 50)}</>
+              ) : (
+                <>{article?.title}</>
+              )}
               <b>&hellip;</b>
             </h2>
-            <div className="my-5 flex gap-4 text-sm">
-              <div className="flex gap-1">
-                <UserIcon /> <span>By administrator</span>
+            <div className="my-1 flex gap-4 text-sm">
+              <div className="flex items-center gap-1">
+                <img
+                  src="/girl-1.avif"
+                  className="h-10 w-10 rounded-full"
+                  alt="uer-image"
+                />
+                <div className="flex flex-col">
+                  <div>
+                    <span>By administrator</span>
+                    <span> · Follow </span>
+                  </div>
+                  <span className="">16h</span>
+                </div>
               </div>
-              <div className="flex gap-1">
-                <UserIcon /> <span>item.time</span>
-              </div>
+              <div className="flex  gap-1"></div>
             </div>
             <div className="inlineContent inline">
               {parse(`${article?.value.slice(0, 100)}`)} <b>&hellip;</b>

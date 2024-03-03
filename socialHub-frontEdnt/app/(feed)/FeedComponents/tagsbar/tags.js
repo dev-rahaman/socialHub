@@ -115,7 +115,7 @@ const Tags = () => {
     setStartIndex((prevStartIndex) =>
       prevStartIndex === 0
         ? studyTags.length - visibleItemCount
-        : prevStartIndex - 1
+        : prevStartIndex - 1,
     );
   };
 
@@ -123,41 +123,41 @@ const Tags = () => {
     setStartIndex((prevStartIndex) =>
       prevStartIndex === studyTags.length - visibleItemCount
         ? 0
-        : prevStartIndex + 1
+        : prevStartIndex + 1,
     );
   };
 
   const visibleItems = studyTags.slice(
     startIndex,
-    startIndex + visibleItemCount
+    startIndex + visibleItemCount,
   );
 
   return (
-    <>
-      <div className="z-50 bg-[#0E6C14] rounded fixed top-16 w-[750px]">
+    <div className="flex items-center justify-center">
+      <div className="fixed top-16 z-50 w-[750px]  rounded bg-[#0E6C14]">
         <div
-          className="p-4 rounded relative overflow-hidden"
+          className="relative overflow-hidden rounded p-4"
           ref={containerRef}
         >
           <button
-            className="absolute mt-3 -left-1 transform -translate-y-1/2 bg-[#194b1c] text-white px-2 py-1 rounded"
+            className="absolute -left-1 mt-3 -translate-y-1/2 transform rounded bg-[#194b1c] px-2 py-1 text-white"
             onClick={handlePrev}
           >
             &laquo;
           </button>
           <button
-            className="absolute mt-3 ml-5 -right-2 transform -translate-y-1/2 bg-[#194b1c] text-white px-2 py-1 rounded"
+            className="absolute -right-2 ml-5 mt-3 -translate-y-1/2 transform rounded bg-[#194b1c] px-2 py-1 text-white"
             onClick={handleNext}
           >
             &raquo;
           </button>
 
-          <div className="flex mx-2">
+          <div className="mx-2 flex">
             {visibleItems.map((item, idx) => (
               <div key={idx}>
                 <Link
-                  href={`/(feed)/classes/${item.tag}`}
-                  className="p-2 text-white rounded bg-[#37833c]  mx-1"
+                  href={`/classes/${item.tag}`}
+                  className="mx-1 rounded bg-[#37833c] p-2  text-white"
                 >
                   {item.tag}
                 </Link>
@@ -166,7 +166,7 @@ const Tags = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

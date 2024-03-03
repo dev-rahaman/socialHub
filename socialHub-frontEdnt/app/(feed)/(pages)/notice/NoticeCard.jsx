@@ -6,9 +6,9 @@ import parse from "html-react-parser";
 export default function NoticeCard({ data }) {
   return (
     <div>
-      <div className="space-y-4 ">
+      <div className="mt-4 space-y-4 ">
         {data.map((item, idx) => (
-          <div className="bg-white p-5 " key={idx}>
+          <div className="mx-4 bg-white p-5" key={idx}>
             <Link href={`/notice/${item._id}`}>
               <span className="cursor-pointer">
                 {parse(

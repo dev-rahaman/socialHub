@@ -5,7 +5,7 @@ import React from "react";
 export default function VideoCard({ data }) {
   return (
     <div>
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+      <div className="mx-4 mt-5 flex flex-wrap items-center justify-center gap-3">
         {data.map((video, idx) => (
           <Link href={`/video/${video?._id}`} key={idx}>
             <div className="relative h-[255px] w-[250px] rounded-lg border border-gray-200 bg-white shadow">
@@ -26,7 +26,14 @@ export default function VideoCard({ data }) {
                   alt="profile picture"
                 />
                 <div class="ms-3 space-y-0.5 text-left font-medium rtl:text-right">
-                  <div>{video?.title.slice(0, 40)}</div>
+                  <div>
+                    {video?.title.length > 40 ? (
+                      <>{video?.title.slice(0, 40)}...</>
+                    ) : (
+                      <>{video?.title}</>
+                    )}
+                  </div>
+
                   <div class="text-sm text-gray-500 dark:text-gray-400">
                     CTO at Google
                   </div>

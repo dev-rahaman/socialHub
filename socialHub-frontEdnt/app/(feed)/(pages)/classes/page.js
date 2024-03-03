@@ -12,7 +12,7 @@ const Classes = () => {
   return (
     <>
       <Tags />
-      <div className="mt-5">
+      <div className="mt-20">
         <ClassCard data={classes} />
       </div>
     </>
