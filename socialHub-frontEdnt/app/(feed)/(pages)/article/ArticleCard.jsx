@@ -4,7 +4,7 @@ import parse from "html-react-parser";
 
 export default function ArticleCard({ data }) {
   return (
-    <div className="mx-5 flex flex-col items-center justify-center">
+    <div className="mx-5 mt-24 flex flex-col items-center justify-center lg:mt-0">
       {data.map((article, idx) => (
         <div
           key={idx}

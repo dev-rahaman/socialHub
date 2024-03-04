@@ -154,10 +154,11 @@ export const Item = ({ name, link, icon }) => {
     <li>
       <Link
         href={link}
-        className="group flex items-center rounded-lg p-2 text-[18px] transition hover:bg-gray-200 hover:text-black"
+        className="group flex items-center rounded-lg p-2 text-[18px] transition hover:text-black lg:hover:bg-gray-200 "
       >
-        <div className="me-2">{icon}</div>
-
+        <div className="rounded-md hover:bg-gray-300 sm:w-5 lg:me-2 lg:hover:bg-gray-200">
+          {icon}
+        </div>
         <span className="hidden sm:inline">{name}</span>
       </Link>
     </li>

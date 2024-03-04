@@ -133,8 +133,8 @@ const Tags = () => {
   );
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="fixed top-16 z-50 w-[750px]  rounded bg-[#0E6C14]">
+    <div className="flex items-center ">
+      <div className="fixed top-28 z-50 ms-10 w-[315px] rounded bg-[#0E6C14]  lg:top-16 lg:w-[750px]">
         <div
           className="relative overflow-hidden rounded p-4"
           ref={containerRef}
@@ -157,7 +157,7 @@ const Tags = () => {
               <div key={idx}>
                 <Link
                   href={`/classes/${item.tag}`}
-                  className="mx-1 rounded bg-[#37833c] p-2  text-white"
+                  className="mx-1 rounded bg-[#37833c] p-2 text-white"
                 >
                   {item.tag}
                 </Link>

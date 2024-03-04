@@ -2,14 +2,14 @@
 import React, { useState } from "react";
 
 const images = [
-  { link: "/profile-image.jpg", alt: "name" },
-  { link: "/book.jpg", alt: "name" },
   { link: "/class.png", alt: "name" },
+  { link: "/profile-image.jpg", alt: "name" },
   { link: "/dini-ilm.jpg", alt: "name" },
   { link: "/girl-1.avif", alt: "name" },
   { link: "/girl-2.jpg", alt: "name" },
   { link: "/girl-3.jpg", alt: "name" },
   { link: "/girl-4.jpg", alt: "name" },
+  { link: "/book.jpg", alt: "name" },
   { link: "/image2.jpg", alt: "name" },
   { link: "/placholder.svg", alt: "name" },
   { link: "/profile-back-cover.jpg", alt: "name" },
@@ -38,9 +38,9 @@ const ImageGallery = () => {
 
   return (
     <>
-      <div class="mt-4 columns-1 sm:columns-2 sm:gap-2 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
+      <div class="ms-12 mt-16 columns-2 sm:columns-2 sm:gap-1 md:columns-3 lg:mt-4 lg:columns-4 [&>img:not(:first-child)]:mt-8">
         {images.map((item, index) => (
-          <div key={index} className="relative my-2">
+          <div key={index} className="my-1">
             <img
               src={item.link}
               alt={item.alt}
