@@ -69,6 +69,7 @@ const BookDetails = ({ params }) => {
           </div>
         </div>
       </div>
+
       {/* Book Details */}
       <div className="my-5 bg-white p-6 shadow-md">
         <p className="border-b-2 font-bold uppercase text-[#4C4C4C]">
@@ -124,6 +125,7 @@ const BookDetails = ({ params }) => {
           </tbody>
         </table>
       </div>
+
       {/* related books */}
       <div className="flex items-center justify-center gap-5">
         {" "}

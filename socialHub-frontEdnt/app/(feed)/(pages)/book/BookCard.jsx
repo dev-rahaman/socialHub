@@ -4,9 +4,9 @@ import React from "react";
 export default function BookCard({ data }) {
   return (
     <>
-      <div className="mb-5 ms-5 mt-14 flex flex-wrap gap-3">
+      <div className="mb-5 ms-5 mt-28 flex flex-wrap gap-3 lg:mt-0">
         {data.map((book) => (
-          <div className=" ms-5 w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
+          <div className="ms-5 w-[310px] rounded-lg border border-gray-200 bg-white shadow lg:ms-0 lg:w-[250px]">
             <img
               src="/book.jpg"
               alt="Book Cover"
